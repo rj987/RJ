@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="utf-8">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" type="text/css" href="./static/mycss.css", media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="./static/mycss2.css", media="screen,projection"/>
+	<title></title>
+</head>
+<body>
+<div id="body">
+            <div class='background'>
+                <div class="text1">
+                    <h1>WELCOME TO ML HOUSE PRICE PREDICTION</h1>
+                    <p id=header>made with ❤️ by RJ</p>
+                </div>
+            </div>
+    <div class=paragraph1>
+        <p>
+             I created a machine learning model using the multiple linear regression equation. I tries to predict the price of the house(in USD) based on the certain pretrained data .
+        </p>
+        
+    </div>
+ <div id=result>
+
+                 <p> {{pred}}</p>
+                </div>
+
+    <div class=paragraph2>
+        <p>
+        Its a fun project ,I just want to make the end product using the machine learning model,which I created in python. For more information <a href="#" target="_blank">click here.</a>
+        </p>
+    </div>
+      <div class=form>
+        <form action="/predict" method="post">
+        	<label>Avg. Area Income:</label><br>
+            <input type="number" placeholder="Avg. Area Income", id="Income" name="Income"><br>
+
+            <label>Avg. Area House Age:</label><br>
+            <input type="number" placeholder="Avg. Area House Age", id='Age' name="Age"><br>
+
+            <label>Avg. Area Number of Rooms:</label><br>
+            <input type="number" placeholder="Avg. Area Number of Rooms" id="Rooms" name='Rooms'><br>
+
+            <label>Area Population</label><br>
+            <input type="number" placeholder="Area Population" id="Population" name="Population"><br>
+               <button id=submitbtn type="submit" value="submit">Submit</button>
+        </form>
+       </div>
+                    <div id=result1>
+                        <p>Knowing is not enough; we must apply. Willing is not enough; we must do</p>
+                </div>
+                
+</div>
+
+</body>
+</html>
